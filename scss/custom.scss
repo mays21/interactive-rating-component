@@ -103,13 +103,28 @@ main {
     }
   }
 }
-.card-subtitle {
-  color: $primary;
+
+.rating {
+  display: none;
 }
 
 .thankyou {
-  display: none;
+  // display: none;
+  text-align: center;
 }
+.card-img {
+  width: 50%;
+  margin: 1rem auto;
+}
+.card-subtitle {
+  background-color: $medium-blue;
+  color: $primary;
+  margin: 0 auto 1rem;
+
+  padding: 0.2rem 0.6rem;
+  border-radius: 2rem;
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
