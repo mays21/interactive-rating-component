@@ -19,3 +19,6 @@
 style-guide.md
 design/*
 debug.css
+
+node_modules
+package*
