@@ -1,7 +1,117 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+@use "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
+$primary: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$medium-blue: rgba(49, 60, 73, 0.8);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+$font-size-base: 0.88rem;
+$font-family-base: "Overpass", sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  background-color: $very-dark-blue;
+  color: $light-grey;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  background-color: $dark-blue;
+  max-width: 20.5rem;
+  margin: 1.2rem;
+  padding: 1.6rem 1rem 2rem 1.1rem;
+}
+.card-icon {
+  border-radius: 50%;
+  background-color: $medium-blue;
+  width: 2.1rem;
+  height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star-icon {
+  width: 40%;
+}
+.card-title {
+  color: $white;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+.card-text {
+  margin-bottom: 2rem;
+}
+.rate-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.rate-button {
+  display: none;
+}
+.rate-button:checked + .rate-icon {
+  background-color: $medium-grey;
+  color: $white;
+}
+.rate-icon {
+  display: block;
+  background-color: $medium-blue;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+.card-btn {
+  background-color: $primary;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  border-radius: 1.5rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.6rem;
+  @media (hover: hover) {
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+  @media (hover: none) {
+    &:action {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+}
+.card-subtitle {
+  color: $primary;
+}
+
+.thankyou {
+  display: none;
+}
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
