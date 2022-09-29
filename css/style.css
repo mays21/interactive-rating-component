@@ -10923,7 +10923,7 @@ main {
 }
 
 .card {
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: hsla(213deg, 19%, 18%, 0.6);
   max-width: 20.5rem;
   margin: 1.2rem;
   padding: 1.6rem 1rem 2rem 1.1rem;
@@ -10931,7 +10931,7 @@ main {
 
 .card-icon {
   border-radius: 50%;
-  background-color: rgba(49, 60, 73, 0.8);
+  background-color: hsl(213deg, 19%, 18%);
   width: 2.1rem;
   height: 2.1rem;
   display: flex;
@@ -10970,7 +10970,7 @@ main {
 
 .rate-icon {
   display: block;
-  background-color: rgba(49, 60, 73, 0.8);
+  background-color: hsl(213deg, 19%, 18%);
   width: 2.5rem;
   height: 2.5rem;
   text-align: center;
@@ -11016,7 +11016,7 @@ main {
 }
 
 .card-subtitle {
-  background-color: rgba(49, 60, 73, 0.8);
+  background-color: hsl(213deg, 19%, 18%);
   color: hsl(25deg, 97%, 53%);
   margin: 0 auto 1rem;
   padding: 0.2rem 0.6rem;

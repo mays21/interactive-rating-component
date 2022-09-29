@@ -14,14 +14,14 @@ main {
   min-height: 100vh;
 }
 .card {
-  background-color: $dark-blue;
+  background-color: $light-dark-blue;
   max-width: 20.5rem;
   margin: 1.2rem;
   padding: 1.6rem 1rem 2rem 1.1rem;
 }
 .card-icon {
   border-radius: 50%;
-  background-color: $medium-blue;
+  background-color: $dark-blue;
   width: 2.1rem;
   height: 2.1rem;
   display: flex;
@@ -53,7 +53,7 @@ main {
 }
 .rate-icon {
   display: block;
-  background-color: $medium-blue;
+  background-color: $dark-blue;
   width: 2.5rem;
   height: 2.5rem;
   text-align: center;
@@ -98,7 +98,7 @@ main {
   margin: 1rem auto;
 }
 .card-subtitle {
-  background-color: $medium-blue;
+  background-color: $dark-blue;
   color: $primary;
   margin: 0 auto 1rem;
 
