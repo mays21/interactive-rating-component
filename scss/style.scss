@@ -29,7 +29,7 @@ main {
   justify-content: center;
 }
 .star-icon {
-  width: 40%;
+  width: 38%;
 }
 .card-title {
   color: $white;
@@ -82,12 +82,10 @@ main {
     background-color: $white;
     color: $primary;
   }
-  @media (hover: none) {
-    &:active {
-      background-color: $white;
-      border-color: $white;
-      color: $primary;
-    }
+  &:active {
+    background-color: $white;
+    border-color: $white;
+    color: $primary;
   }
 }
 
@@ -114,4 +112,27 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 800px) {
+  main {
+    font-size: $font-size-base * 1.06;
+  }
+  .card {
+    max-width: 26rem;
+    border-radius: 10%;
+    padding: 2.5rem 2.3rem 2.2rem 2.3rem;
+  }
+  .card-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .card-title {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+  .rate-icon {
+    width: 3.4rem;
+    height: 3.4rem;
+    line-height: 3.4rem;
+  }
 }

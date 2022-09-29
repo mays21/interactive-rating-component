@@ -10940,7 +10940,7 @@ main {
 }
 
 .star-icon {
-  width: 40%;
+  width: 38%;
 }
 
 .card-title {
@@ -10999,12 +10999,10 @@ main {
   background-color: hsl(0deg, 0%, 100%);
   color: hsl(25deg, 97%, 53%);
 }
-@media (hover: none) {
-  .card .card-btn:active {
-    background-color: hsl(0deg, 0%, 100%);
-    border-color: hsl(0deg, 0%, 100%);
-    color: hsl(25deg, 97%, 53%);
-  }
+.card .card-btn:active {
+  background-color: hsl(0deg, 0%, 100%);
+  border-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
 }
 
 .thankyou {
@@ -11032,5 +11030,29 @@ main {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    font-size: 0.9328rem;
+  }
+  .card {
+    max-width: 26rem;
+    border-radius: 10%;
+    padding: 2.5rem 2.3rem 2.2rem 2.3rem;
+  }
+  .card-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .card-title {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+  .rate-icon {
+    width: 3.4rem;
+    height: 3.4rem;
+    line-height: 3.4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
